@@ -87,7 +87,7 @@ button, input, textarea{
 .move{
 	transition-property:opacity, transform;
 	transition-duration: 2s, 2s;
-	transition-delay:2s, 0;
+	transition-delay:2s, 0.3s;
 	transition-timing-function:linear, linear;
 }
 
