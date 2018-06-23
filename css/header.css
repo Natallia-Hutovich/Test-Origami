@@ -38,6 +38,7 @@ header{
 	width: 36px;
 	height: 24px;
 	display: none;
+	position: relative;
 }
 	.toggle_menu:hover{
 		cursor: pointer;
@@ -46,19 +47,18 @@ header{
 	width: 100%;
 	height: 4px;
 	background-color: rgb(33, 33, 33);
-	position: relative;
-	z-index: 99;
+	position: absolute;
+	z-index: 3;
 }
 	.menu_btn:after, .menu_btn:before{
 		content: '';
 		display: block;
-		position: absolute;
 	}
 	.menu_btn:after{
-		margin-top:-10px;
+		top:10px;
 	}
 	.menu_btn:before{
-		margin-top: 10px;
+		top: 20px;
 	}
 .logo{
 	position: absolute;
@@ -67,7 +67,7 @@ header{
 	z-index: 99;
 }
 	.logo a{
-		font-family: Arial, sans-serif;
+		font-family:  Roboto, Arial, sans-serif;
 		font-size: 36px;
 		font-weight: bold;
 		text-transform: uppercase;
@@ -104,7 +104,7 @@ header{
 .menu_item{
  	display: block;
  	padding: 18px 22px 16px 10px;
- 	font-family: Arial, sans-serif;
+ 	font-family:  Roboto, Arial, sans-serif;
  	font-size: 18px;
  	font-weight: bold;
  	text-transform: uppercase;
@@ -142,7 +142,7 @@ header{
 .submenu_item{
 	display: block;
 	padding: 22px 0 22px 20px;
-	font-family: Arial, sans-serif;
+	font-family:  Roboto, Arial, sans-serif;
  	font-size: 18px;
  	font-weight: bold;
  	text-transform: capitalize;
@@ -165,7 +165,7 @@ header{
  	flex-flow: column nowrap;
  	justify-content: space-between;
  	position: absolute;
- 	font-family: Arial, sans-serif;
+ 	font-family:  Roboto, Arial, sans-serif;
 	font-weight: bold;
 	text-transform: uppercase;
 	line-height: 0.7;
